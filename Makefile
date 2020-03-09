@@ -26,7 +26,7 @@ endif
 
 include $(PGXS)
 
-ifeq ($(shell test $(VERSION_NUM) -lt 110000; echo $?), 0)
+ifeq ($(shell test $(VERSION_NUM) -lt 110000; echo $$?), 0)
 	override CXXFLAGS += $(CFLAGS_SL)
 endif
 
