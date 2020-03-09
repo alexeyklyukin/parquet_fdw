@@ -12,6 +12,7 @@ matrix:
                   - postgresql-client-10
                   - postgresql-server-dev-10
         install:
+          - pg_config
           - sudo make install
 
       - env: postgres=11
